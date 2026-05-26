@@ -6,3 +6,4 @@ lockfile = true
 rust = "latest"
 rust-analyzer = "latest"
 cargo-dist = "latest"
+"cargo:cargo-zigbuild" = "latest"
