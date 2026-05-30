@@ -26,7 +26,15 @@ tracing-subscriber = { version = "0.3", features = [
 ] }
 anyhow = "1.0"
 
+[dev-dependencies]
+anyhow = "1.0"
+pretty_assertions = "1.4.1"
+rmcp = { version = "1.7.0", features = ["client", "transport-child-process"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+
 # The profile that 'dist' will build with
 [profile.dist]
 inherits = "release"
 lto = "thin"
+
